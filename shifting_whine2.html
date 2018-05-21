@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet"  href="./vin2.css">
+
+        <title>Vins</title>
+    </head>
+
+    <body>
+        <div id="app" @mousemove="mouseMouve" >
+            <div class="container-fluid" >
+                <!--navbar-->    
+                <div class="row">
+                    <div class="col-12  p-0">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+
+                                    <li class="nav-item nav-link">
+
+                                        <a class="nav-link" href="#">{{message}}</a>
+                                    </li>
+
+                                    <li class="nav-item nav-link">
+                                        <button class="btn btn-primary" @click="change = !change">Changer</button>{{change}}
+
+                                    </li>
+
+                                    <li class="nav-item nav-link">
+
+                                        <a class="nav-link" href="#">x{{X}},y{{Y}}</a>
+                                    </li>
+                                    {{screenWidth}}
+                                    <li  class="nav-item nav-link">
+                                        {{styleObject}}
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            
+            <div id="advert">
+                <div class="test" :style="styleObject2" >
+                    <page1 class="page" :style=""/>
+                </div>
+
+                <div class="test2" :style="styleObject" >
+                    <page2 class="page" :style=""  />
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+
+        <!--<div v-bind:style="styleObject1"  style="{border : 2px solid pink;background-color: indianred; height: 20px;}">
+relinqueret laborum cohaerescant noster veniam cohaerescant possumus tempor ne 
+occaecat non dolore tamen praesentibus probant iis laboris sed nam illum o 
+sempiternum hic instituendarum cohaerescant
+
+</div>
+<div v-bind:style="styleObject2"  style="{border : 2px solid pink;background-color: yellow; height: 20px;}">
+relinqueret laborum cohaerescant noster veniam cohaerescant possumus tempor ne 
+occaecat non dolore tamen praesentibus probant iis laboris sed nam illum o 
+sempiternum hic instituendarum cohaerescant
+
+</div>
+-->
+
+
+        <!--advert1--> 
+        <!--style="{border : 2px solid pink;background-color: indianred; height: 50vh;}"-->
+        <!--style="{border : 2px solid purple; background-color: aqua; height: 50vh;}"-->
+        <!--v-bind:style="styleObject1" -->
+        <!--v-bind:style="styleObject2"-->
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!--vuejs-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+        <!--parallaxjs-->
+        <!-- <script src="js/jquery.parallax.js"></script>-->
+
+        <!--   app js-->
+        <script src="vuejs2.js"></script>
+
+
+    </body>
+</html>
